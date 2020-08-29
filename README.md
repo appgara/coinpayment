@@ -2,8 +2,10 @@
 
 ## Package thanh toán Coin bằng CoinPayments cho Laravel v7.0+
 
-Chấp nhận thanh toán bằng CoinPayments với hơn 100+ coin.
- [**Đăng Ký Tài Khoản**](https://gocps.net/sfg6gw5qtg58dmsutg5qv7oflyxf/) sau đó làm theo hướng dẫn bên dưới.
+Vui lòng làm theo các bước sau để sử dụng API của coinpayments:
+ - [**Đăng Ký Tài Khoản**](https://gocps.net/sfg6gw5qtg58dmsutg5qv7oflyxf/) để lấy API Keys.
+ - Sau khi đăng nhập tài khoản CoinPayments, vào [**link này**](https://www.coinpayments.net/acct-coins) để kích hoạt ví USDT-ERC20. Điền địa chỉ ví USDT-ERC20 vào trường **Your Payment Address** và ở cột bên cạnh **Payout Mode** chọn **ASAP**
+ - Tiếp theo cài đặt API Key theo huớng dẫn tại file **/config/config.php**
 
 ![Ảnh Minh Hoạ](https://github.com/appgara/coinpayment-laravel/blob/master/vi-du.png?raw=true)
 
@@ -11,7 +13,7 @@ Chấp nhận thanh toán bằng CoinPayments với hơn 100+ coin.
 * Laravel v7.0+
 * PHP >= v7.2+
 
-## Cài Đặt
+## Cài Đặt Vào Web Laravel
 Bạn có thể cài đặt package này qua composer:
 ```
 $ composer require appgara/coinpayment-laravel
