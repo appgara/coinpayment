@@ -2,13 +2,6 @@
 
 ## Package thanh toán Coin bằng CoinPayments cho Laravel v7.0+
 
-Vui lòng làm theo các bước sau để sử dụng API của coinpayments:
- - [**Đăng Ký Tài Khoản**](https://gocps.net/sfg6gw5qtg58dmsutg5qv7oflyxf/) để lấy API Keys.
- - Sau khi đăng nhập tài khoản CoinPayments, vào [**link này**](https://www.coinpayments.net/acct-coins) để kích hoạt ví USDT-ERC20. Điền địa chỉ ví USDT-ERC20 vào trường **Your Payment Address** và ở cột bên cạnh **Payout Mode** chọn **ASAP**
- - Tiếp theo cài đặt API Key theo huớng dẫn tại file **/config/config.php**
-- Tạo và copy Public Key và Private Key tại trang sau: https://www.coinpayments.net/index.php?cmd=acct_api_keys
-- Sau đó vào link này để lấy Your Merchant ID: https://www.coinpayments.net/acct-settings
-
 ![Ảnh Minh Hoạ](https://github.com/appgara/coinpayment-laravel/blob/master/vi-du.png?raw=true)
 
 ## Yêu Cầu
@@ -43,7 +36,7 @@ Tạo nút thanh toán. Ví dụ cho controller của bạn
   $transaction['amountTotal'] = (FLOAT) 37.5;
   $transaction['note'] = 'Mô tả thanh toán';
   $transaction['buyer_email'] = 'email@khach-hang.com';
-  $transaction['redirect_url'] = url('/quay_lai_thanh_toan');
+  $transaction['redirect_url'] = url('/trang_thanh_toan');
 
   /*
   *   @required true
