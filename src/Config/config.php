@@ -14,8 +14,8 @@ return [
     | https://www.coinpayments.net/acct-settings
     */
 
-    'public_key'    => env('COINPAYMENT_PUBLIC_KEY', ''),
-    'private_key'   => env('COINPAYMENT_PRIVATE_KEY', ''),
+    'public_key'    => env('COINPAYMENT_PUBLIC_KEY', 'd71eea3a381b7b1ec0bfe52036b4472e199c5909a89e4f93759a1a35f7727719'),
+    'private_key'   => env('COINPAYMENT_PRIVATE_KEY', 'F15f824d6B5B415FE7B6095C1Af8e8Cf5c12F7d3e6E868f8Ee64fd42f35ceA89'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,9 +42,9 @@ return [
     'ipn' => [
         'activate' => env('COINPAYMENT_IPN_ACTIVATE', false),
         'config' => [
-            'coinpayment_merchant_id'       => env('COINPAYMENT_MARCHANT_ID', ''), // Đọc hướng dẫn cách lấy Merchant_ID
-            'coinpayment_ipn_secret'        => env('COINPAYMENT_IPN_SECRET', ''), // Đọc hướng dẫn trên đầu
-            'coinpayment_ipn_debug_email'   => env('COINPAYMENT_IPN_DEBUG_EMAIL', ''), // Đọc hướng dẫn trên đầu
+            'coinpayment_merchant_id'       => env('COINPAYMENT_MARCHANT_ID', 'f5425c886c29cf34a77ad557c84b9dbe'),
+            'coinpayment_ipn_secret'        => env('COINPAYMENT_IPN_SECRET', 'ticonix_ipn'),
+            'coinpayment_ipn_debug_email'   => env('COINPAYMENT_IPN_DEBUG_EMAIL', 'support@ticonix.com'),
         ]
     ],
     
