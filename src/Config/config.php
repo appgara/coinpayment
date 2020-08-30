@@ -4,13 +4,14 @@ return [
     
     /*
     |--------------------------------------------------------------------------
-    | API Key settings
+    | Cài Đặt API Key
     |--------------------------------------------------------------------------
     |
-    | Set your public & private key
-    | please following url for set your public & private key below
+    | Cài đặt và copy Public Key và Private Key tại trang sau
     | https://www.coinpayments.net/index.php?cmd=acct_api_keys
     |
+    | Sau đó vào link này để lấy Your Merchant ID:
+    | https://www.coinpayments.net/acct-settings
     */
 
     'public_key'    => env('COINPAYMENT_PUBLIC_KEY', ''),
@@ -18,11 +19,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Middleware for make payment
+    | Middleware để tạo thanh toán
     |--------------------------------------------------------------------------
     |
-    | Set the custom middleware 
-    | you can set the "auth" or "auth:guard"
+    | Cài đặt middleware tự chọn
+    | bạn có thể chọn "auth" hoặc "auth:guard"
     |
     */
     
@@ -30,32 +31,32 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | IPN setting
+    | Cài Đặt IPN 
     |--------------------------------------------------------------------------
     |
-    | If you use IPN for get callback response transactions
-    | please activate IPN configuration below
+    | Nếu bạn sử dụng IPN để lấy callback response thông tin chuyển khoản
+    | thì cài đặt IPN vao` bên dưới
     |
     */
 
     'ipn' => [
         'activate' => env('COINPAYMENT_IPN_ACTIVATE', false),
         'config' => [
-            'coinpayment_merchant_id'       => env('COINPAYMENT_MARCHANT_ID', ''),
-            'coinpayment_ipn_secret'        => env('COINPAYMENT_IPN_SECRET', ''),
-            'coinpayment_ipn_debug_email'   => env('COINPAYMENT_IPN_DEBUG_EMAIL', ''),
+            'coinpayment_merchant_id'       => env('COINPAYMENT_MARCHANT_ID', ''), // Đọc hướng dẫn cách lấy Merchant_ID
+            'coinpayment_ipn_secret'        => env('COINPAYMENT_IPN_SECRET', ''), // Đọc hướng dẫn trên đầu
+            'coinpayment_ipn_debug_email'   => env('COINPAYMENT_IPN_DEBUG_EMAIL', ''), // Đọc hướng dẫn trên đầu
         ]
     ],
     
     /*
     |--------------------------------------------------------------------------
-    | Currencies setting
+    | Cài Đặt Tiền Tệ
     |--------------------------------------------------------------------------
     |
-    | please use one currencies for convert coin amount
-    | USD, CAD, EUR, ARS, AUD, AZN, BGN, BRL, BYN, CHF, CLP, CNY, COP, CZK
-    | DKK, GBP, GIP, HKD, HUF, IDR, ILS, INR, IRR, IRT, ISK, JPY, KRW, LAK, MKD, MXN, ZAR,
-    | MYR, NGN, NOK, NZD, PEN, PHP, PKR, PLN, RON, RUB, SEK, SGD, THB, TRY, TWD, UAH, VND,
+    | Dùng Các Mã Tiền Sau Để Convert Ra Coin
+    | VND, USD, CAD, EUR, ARS, AUD, AZN, BGN, BRL, BYN, CHF, CLP, CNY, COP, CZK
+    | DKK, GBP, GIP, HKD, HUF, IDR, ILS, INR, IRR, IRT, ISK, JPY, KRW, LAK, MKD, MXN, 
+    | MYR, NGN, NOK, NZD, PEN, PHP, PKR, PLN, RON, RUB, SEK, SGD, THB, TRY, TWD, UAH,
     |
     */
 
@@ -63,21 +64,21 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Header setting
+    | Cài Đặt Header
     |--------------------------------------------------------------------------
     */
 
     'header' => [
         'default' => 'logo',
         'type' => [
-            'logo' => '/coinpayment.logo.png', // path assets file only
-            'text' => 'Your payment summary'
+            'logo' => '/coinpayment.logo.png',
+            'text' => 'Mô tả thanh toán đơn hàng'
         ]
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Font setting
+    | Font Chữ
     |--------------------------------------------------------------------------
     */
 
