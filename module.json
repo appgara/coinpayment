@@ -6,10 +6,10 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Hexters\\CoinPayment\\Providers\\CoinPaymentServiceProvider"
+        "AppGara\\CoinPayment\\Providers\\CoinPaymentServiceProvider"
     ],
     "aliases": {
-        "CoinPayment": "Hexters\\CoinPayment\\Helpers\\CoinPaymentFacade"
+        "CoinPayment": "AppGara\\CoinPayment\\Helpers\\CoinPaymentFacade"
     },
     "files": [],
     "requires": []
