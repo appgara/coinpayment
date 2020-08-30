@@ -1,27 +1,27 @@
 {
-    "name": "hexters/coinpayment",
-    "description": "CoinPayment is a Laravel module for handling transactions from CoinPayment like a create transaction, history transaction, etc.",
+    "name": "appgara/coinpayment-laravel",
+    "description": "Package tích hợp coinpayment vào Laravel",
     "keywords": ["Coinpayment", "Payment Gateway", "Laravel", "Cryptocurrency", "Bitcoin"],
     "license" : "MIT",
     "authors": [
         {
-            "name": "Saifullah Syahidin",
-            "email": "hexters@gmail.com"
+            "name": "AppGara",
+            "email": "appgara.com@gmail.com"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-                "Hexters\\CoinPayment\\Providers\\CoinPaymentServiceProvider"
+                "AppGara\\CoinPayment\\Providers\\CoinPaymentServiceProvider"
             ],
             "aliases": {
-                "CoinPayment": "Hexters\\CoinPayment\\Helpers\\CoinPaymentFacade"
+                "CoinPayment": "AppGara\\CoinPayment\\Helpers\\CoinPaymentFacade"
             }
         }
     },
     "autoload": {
         "psr-4": {
-            "Hexters\\CoinPayment\\": "src/"
+            "AppGara\\CoinPayment\\": "src/"
         }
     }
 }
